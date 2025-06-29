@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "d501f25d-23f2-4d7e-a491-1af50eba7a4e",
+		"name": "Parcel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46275657"
+	},
+	"item": [
+		{
+			"name": "Add Parcel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customerName\": \"Parrot\",\n    \"parcelDeliveryAddress\": \"Far Away Kingdom\",\n    \"customContactAddress\": \"9008007006\",\n    \"parcelWeight\":\"10\",\n    \"parcelWidth\":\"4\",\n    \"parcelHeight\":\"5\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/parcels",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"parcels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Parcel 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/parcels/1",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"parcels",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Parcel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customerName\": \"Sparrow\",\n    \"parcelDeliveryAddress\": \"The Giant Tree\",\n    \"customContactAddress\": \"9876543210\",\n    \"parcelWeight\":\"65\",\n    \"parcelWidth\":\"10\",\n    \"parcelHeight\":\"20\"\n\n\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/parcels",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"parcels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Parcel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/parcels",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"parcels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Parcel 1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customerName\": \"Red Neck Parrot\",\n    \"parcelDeliveryAddress\": \"Far Away Town\",\n    \"customContactAddress\": \"9008007654\",\n    \"parcelWeight\":\"10\",\n    \"parcelWidth\":\"4\",\n    \"parcelHeight\":\"5\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/parcels/1",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"parcels",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Parcel 2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/parcels/2",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"parcels",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Parcels",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/parcels",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"parcels"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseurl",
+			"value": "localhost:8080",
+			"type": "string"
+		}
+	]
+}
